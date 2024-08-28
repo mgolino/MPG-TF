@@ -21,6 +21,7 @@ resource "aws_instance" "web" {
   tags = {
     Name = "HelloWorld"
   }
+}
 resource "aws_subnet" "some_public_subnet" {
   vpc_id            = vpc-0f72d0fcb34f25235
  # cidr_block        = "10.0.1.0/24"
@@ -29,6 +30,4 @@ resource "aws_subnet" "some_public_subnet" {
   tags = {
     Name = "vpc-0f72d0fcb34f25235"
   }
-}
-
 }
